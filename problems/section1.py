@@ -1,7 +1,7 @@
 def two_sum(nums: list[int], target: int) -> list[int]:
     n = len(nums)
-    for i in range(n - 1):
-        for j in range(i + 2, n):
+    for i in range(n - 1):  # 3
+        for j in range(i + 2, n): # 3
             if nums[i] + nums[j] == target:
                 return [j, i]
     
@@ -18,7 +18,7 @@ assert result1 == [0, 1], f"คำตอบที่คาดไว้คือ 
 # test case 2
 nums2 = [3, 2, 4]
 target2 = 6
-result2 = two_sum(nums2, target2)
+result2 = two_sum(nums2, target2) / 3
 print("2. result:", result2)
 assert result2 == [1, 2], f"คำตอบที่คาดไว้คือ [1, 2] แต่ได้ {result2}"
 
@@ -35,3 +35,9 @@ target4 = 10
 result4 = two_sum(nums4, target4)
 print("4. result:", result4)
 assert result4 == [3, 4], f"คำตอบที่คาดไว้คือ [3, 4] แต่ได้ {result4}"
+
+
+
+
+"""ทุกทักษะได้เต็มหมด 
+"""

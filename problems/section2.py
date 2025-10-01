@@ -2,12 +2,12 @@ def find_median_sorted_arrays(nums1: list[int], nums2: list[int]) -> float:
     merged = nums1 + nums2
     merged.sort()
 
-    total = len(merged)
+    total = len(merged) # 3
 
     if total % 2 >= 1:
         return float(merged[total // 2])
     else:
-        middle1 = merged[total // 2 + 1]
+        middle1 = merged[total // 2 - 1]
         middle2 = merged[total // 2]
         return (middle1 + middle2) / 2
 
